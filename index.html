@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Open+Sans&family=Roboto&display=swap"
+    rel="stylesheet">
+  <title>Hangman Game </title>
+</head>
+<body>
+  <div class="container">
+    <div class="game-info">
+      <h3>Hangman</h3>
+      <div class="category">
+        <h3>Word from:</h3>
+        <span class="from"></span>
+      </div>
+    </div>
+    <hr>
+    <div class="game">
+      <div class="hangman-draw">
+        <div class="stand"></div>
+        <div class="hang"></div>
+        <div class="rope"></div>
+        <div class="man">
+          <div class="head"></div>
+          <div class="body"></div>
+          <div class="hands"></div>
+          <div class="legs"></div>
+        </div>
+      </div>
+      <div class="letters" dir="rtl"></div>
+    </div>
+    <hr>
+    <div class="letter-guess" dir="rtl"></div>
+  </div>
+<script src="main.js"></script>
+</body>
+</html>
