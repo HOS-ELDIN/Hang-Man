@@ -98,7 +98,7 @@ function game(jWord) {
         wrongAttempt++;
         if (wrongAttempt === 7) {
           lettersContainer.classList.add("finished");
-          endGame();
+          endGame(randomWord);
         }
         // add classes to the draw
         hangmanDraw.classList.add(`wrong-${wrongAttempt}`);
@@ -112,7 +112,7 @@ function game(jWord) {
       finishedWord = guessedWordarray.join("");
     }
     if (finishedWord === randomWord.toLowerCase()) {
-      winGame();
+      winGame(randomWord,wrongAttempt);
     }
   });
 }
